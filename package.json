@@ -9,6 +9,9 @@
     "start": "webpack-dev-server --mode development --env.ENVIRONMENT=development --config webpack.config.js"
   },
   "author": "",
+  "engines": {
+    "node": "10.x"
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.1.0",
