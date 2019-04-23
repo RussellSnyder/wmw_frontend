@@ -1,0 +1,36 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --env.ENVIRONMENT=production --config webpack.config.js",
+    "start": "webpack-dev-server --mode development --env.ENVIRONMENT=development --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "dotenv": "^7.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "react-hot-loader": "^4.3.11",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": ">=3.1.11"
+  },
+  "dependencies": {
+    "papercss": "^1.6.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-facebook": "^8.0.4",
+    "react-router-dom": "^5.0.0"
+  }
+}
