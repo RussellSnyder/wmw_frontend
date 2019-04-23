@@ -84,7 +84,7 @@ module.exports = (env) => {
                 hash: true
             }),
             new CopyPlugin([
-                { from: 'public', to: 'public' }
+                { from: 'public', to: '' }
             ]),
 
         ]
