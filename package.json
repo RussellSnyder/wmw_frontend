@@ -30,7 +30,6 @@
     "react-app-env": "^1.2.3",
     "react-hot-loader": "^4.3.11",
     "style-loader": "^0.23.0",
-    "webpack": "^4.19.1",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": ">=3.1.11"
   },
@@ -39,6 +38,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-facebook": "^8.0.4",
-    "react-router-dom": "^5.0.0"
+    "react-router-dom": "^5.0.0",
+    "webpack": "^4.19.1"
   }
 }
