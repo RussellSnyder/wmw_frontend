@@ -76,7 +76,8 @@ module.exports = env => {
                 hash: true
             }),
             new CopyPlugin([
-                { from: 'public', to: '' }
+                { from: 'public', to: '' },
+                { from: 'index.js', to: '' }
             ]),
         ]
     }
