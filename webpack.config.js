@@ -16,12 +16,12 @@ module.exports = env => {
     // We're concatenating the environment name to our filename to specify the correct env file!
     const envPath = basePath + '.' + env.NODE_ENV;
 
-
     // Check if the file exists, otherwise fall back to the production .env
     const finalPath = fs.existsSync(envPath) ? envPath : basePath;
 
     // Set the path parameter in the dotenv config
     const fileEnv = dotenv.config({ path: finalPath }).parsed;
+
 
     // reduce it to a nice object, the same as before (but with the variables from the file)
     const envKeys = Object.keys(fileEnv).reduce((prev, next) => {
@@ -39,6 +39,16 @@ module.exports = env => {
                     exclude: /(node_modules)/,
                     loader: "babel-loader",
                     options: {presets: ["@babel/env"]}
+                },
+                {
+                    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                    use: [{
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }]
                 },
                 {
                     test: /\.css$/,

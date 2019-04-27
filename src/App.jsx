@@ -1,6 +1,8 @@
 import React, { Component} from "react";
 import "./App.css";
 import "../node_modules/papercss/dist/paper.min.css";
+import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+import "../node_modules/@fortawesome/fontawesome-free/js/all.min.js";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 

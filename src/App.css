@@ -29,6 +29,17 @@
 
 }
 
+.page-epk .social-media-entry {
+    font-size: 2em;
+    color: #41403e;
+}
+
+.page-epk .social-media-entry a {
+    font-size: 1em;
+    color: #41403e;
+    background-image: none;
+}
+
 footer {
 text-align: center;
 margin-top: 80px;
