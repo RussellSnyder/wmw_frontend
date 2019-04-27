@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./components/pages/home"
 import About from "./components/pages/about"
 import Contact from "./components/pages/contact"
-import Epk from "./components/pages/Epk"
+import Epk from "./components/pages/epk"
 import Music from "./components/pages/music"
 import Shows from "./components/pages/shows"
 import Thankyou from "./components/pages/thankyou"
